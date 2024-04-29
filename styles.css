@@ -10,7 +10,7 @@ header {
     background-image: url('lake_district.jpg'); /* Add your Lake District photo */
     background-size: cover;
     color: #fff;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ section {
 }
 
 footer {
-    background-color: #eaf6ff;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
