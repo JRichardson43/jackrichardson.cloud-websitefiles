@@ -1,17 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #eaf6ff; /* Light blue background */
-    color: #333;
-}
-
 header {
-    background-image: url('lake_district.jpg'); /* Add your Lake District photo */
+    background-image: url('lake_district.jpg');
     background-size: cover;
+    background-position: center; /* Center the background image */
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
+    height: 300px; /* Set the height of the header to ensure the background image covers the entire area */
+}
+
+/* Copyright text style */
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 nav ul {
@@ -37,7 +42,7 @@ main {
 
 section {
     margin-bottom: 30px;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 
 footer {
