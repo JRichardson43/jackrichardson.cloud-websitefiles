@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #eaf6ff; /* Light blue background */
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-image: url('lake_district.jpg'); /* Add your Lake District photo */
+    background-size: cover;
     color: #fff;
     padding: 20px;
     text-align: center;
