@@ -71,6 +71,17 @@ header nav {
     margin-top: -75px; /* Adjust to remove excess top space */
 }
 
+.hero-small {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('motorsport.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: -75px;
+}
+
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -100,20 +111,20 @@ header nav {
     background: #61dafb;
 }
 
-.about, .projects, .contact {
+.about, .projects, .interests, .contact {
     max-width: 1200px;
     margin: 80px auto;
     padding: 20px;
     text-align: center;
 }
 
-.about h2, .projects h2, .contact h2 {
+.about h2, .projects h2, .interests h2, .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #282c34;
 }
 
-.about p {
+.about p, .interests p {
     color: #555;
 }
 
