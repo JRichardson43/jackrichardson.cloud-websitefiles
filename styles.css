@@ -9,22 +9,25 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: #333;
+    background: #282c34;
     color: #fff;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     font-weight: 600;
     font-size: 1.5rem;
     margin-left: 20px;
+    color: #61dafb;
 }
 
 header nav {
@@ -46,29 +49,36 @@ header nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #61dafb;
     text-decoration: none;
     font-weight: 400;
     font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #21a1f1;
 }
 
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    margin-top: -75px; /* Adjust to remove excess top space */
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    color: #61dafb;
 }
 
 .hero-content span {
-    color: #4CAF50;
+    color: #21a1f1;
 }
 
 .hero-content p {
@@ -78,16 +88,21 @@ header nav {
 
 .cta {
     padding: 0.75rem 1.5rem;
-    background: #4CAF50;
+    background: #21a1f1;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background: #61dafb;
 }
 
 .about, .projects, .contact {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 20px;
     text-align: center;
 }
@@ -95,20 +110,42 @@ header nav {
 .about h2, .projects h2, .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #282c34;
+}
+
+.about p {
+    color: #555;
 }
 
 .project-grid {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .project-card {
-    background: #f4f4f4;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #21a1f1;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #777;
 }
 
 .contact form {
@@ -117,6 +154,10 @@ header nav {
     gap: 15px;
     max-width: 500px;
     margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact input, .contact textarea {
@@ -128,18 +169,23 @@ header nav {
 
 .contact button {
     padding: 10px;
-    background: #4CAF50;
+    background: #21a1f1;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #61dafb;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #282c34;
     color: #fff;
     margin-top: 50px;
 }
