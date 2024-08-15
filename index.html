@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Jack Richardson</title>
+    <title>Jack Richardson | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="learning.html">Learning</a></li>
-                <li><a href="outside_of_work.html">Outside of Work</a></li>
+            <div class="logo">Jack Richardson</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Short Description</h2>
-            <p>Welcome to my website! I'm Jack Richardson, and here you'll find out more about me, my interests, and my experiences.</p>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Jack Richardson</span></h1>
+            <p>Web Developer & Designer</p>
+            <a href="#contact" class="cta">Get in Touch</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Photo</h2>
-            <img src="jack_photo.jpg" alt="Jack Richardson">
-        </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in creating modern and responsive websites. I love turning complex problems into simple, beautiful designs.</p>
+    </section>
 
-        <section>
-            <h2>Fun Facts</h2>
-            <ul>
-                <li>I love hiking in the mountains.</li>
-                <li>I enjoy experimenting with new recipes in the kitchen.</li>
-                <li>I'm passionate about learning new languages.</li>
-            </ul>
-        </section>
-    </main>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Jack Richardson</p>
+        <p>&copy; 2024 Jack Richardson. All rights reserved.</p>
     </footer>
 </body>
 </html>
